@@ -18,7 +18,11 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 .modal-body a{
+    color: #666!important;
     text-decoration: underline;
+}
+.modal-body a:hover{
+    color: #ED1B24!important;
 }
 .input-icon{
     margin-top: -29px;
@@ -30,4 +34,10 @@
     color: #666;
     -moz-osx-font-smoothing: grayscale;   /* Firefox */
     -webkit-font-smoothing: antialiased; /* WebKit  */
+}
+.small{
+    font-size: 0.85em;
+}
+.payoff{
+    margin: 2% 0;
 }
