@@ -1,0 +1,33 @@
+/* Smaller devices (smartphone, up to 767px) */
+@media (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+    .container .col-xs-12 {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+    }
+    #logo.index{
+        width: 320px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #login{
+        padding: 20px;
+    }
+}
+
+/* Small devices (smartphone or tablet, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (tablet or laptop, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

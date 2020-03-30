@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" ><!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi Trend</title>
+    <!-- Fogli di stile -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/mobile.css" rel="stylesheet" media="screen">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+    <!-- respond.js per IE8 -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.js"></script>
+    <![endif]-->
+    <!-- jQuery e plugin JavaScript  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body class="bg-info">
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="promo" class="col-md-12 bg-success text-center">
+            Sconto 10% primo acquisto - Codice: <strong>WEL1</strong>
+            <!-- Versione per pagine interne: <a href="#" class="btn btn-promo visible-lg-inline-block visible-md-inline-block visible-sm-inline-block"><b>COMPRA ORA!</b></a> -->
+            <!-- Qui apro una finestra che dice di compilare il form-->
+            <button type="button" class="btn btn-promo visible-lg-inline-block visible-md-inline-block visible-sm-inline-block" data-toggle="modal" data-target="#myModal"><b>ACCEDI ORA!</b></button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Compila il modulo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <b>Sei già cliente Trend?</b><br>Bastano solo codice cliente e password, compila il modulo qui sotto ed accedi ad un mondo di vantaggi!<br><br>
+                        <b>Non sei ancora cliente Trend?</b><br> <a href="https://www.trendsrl.net/it/index/login" target="_blank">Registrati Subito</a>
+                    </div>
+                    <!--
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div id="logo" class="col-md-12 center-block index">
+            <img src="img/logo.png" alt="logo">
+        </div>
+    </div>
+    <div class="row">
+        <div id="login" class="col-xs-12 col-sm-6 col-sm-pull-3 col-sm-push-3 col-md-6 col-md-pull-3 col-md-push-3">
+            <form>
+                <div class="form-group">
+                    <label for="codicecliente">Codice Cliente</label>
+                    <input type="text" class="form-control" id="codicecliente">
+                    <a id="tooltip-codice" class="input-icon" href="#" data-toggle="tooltip" data-placement="left" title="Il codice cliente si trova su tutti i documenti inviati dalla Trend S.r.l. come fatture, conferme d'ordine, DDT, ecc.">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="false"></span>
+                    </a>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-group" id="show_hide_password">
+                        <input class="form-control" type="password" id="password">
+                        <div class="input-group-addon">
+                            <a class="input-icon" href=""><span id="icona" class="glyphicon glyphicon-eye-open" aria-hidden="true"></span></a>
+                        </div>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Ricordami
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-success pull-right">Accedi</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // TOOLTIP
+    $('#tooltip-codice').tooltip();
+
+    //MOSTRA-NASCONDI PASSWORD
+    $(document).ready(function() {
+        $("#show_hide_password a").on('click', function(event) {
+            event.preventDefault();
+            if($('#show_hide_password input').attr("type") == "text"){
+                $('#show_hide_password input').attr('type', 'password');
+                $('#icona').addClass( "glyphicon-eye-open" );
+                $('#icona').removeClass( "glyphicon-eye-close" );
+            }else if($('#show_hide_password input').attr("type") == "password"){
+                $('#show_hide_password input').attr('type', 'text');
+                $('#icona').addClass( "glyphicon-eye-close" );
+                $('#icona').removeClass( "glyphicon-eye-open" );
+            }
+        });
+    });
+</script>
+
+
+</body>
+</html>
