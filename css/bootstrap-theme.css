@@ -258,7 +258,7 @@ fieldset[disabled] .btn-info.active {
 }
 .btn-promo {
   border: 2px solid #FFF;
-  color: #FFF;
+  color: #FFF!important;
   font-size: 0.7em;
   padding: 3px 10px;
   margin-left: 10px;

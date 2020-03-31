@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" ><!--<![endif]-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servizi Trend</title>
+    <!-- Fogli di stile -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/mobile.css" rel="stylesheet" media="screen">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+    <!-- respond.js per IE8 -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.js"></script>
+    <![endif]-->
+    <!-- jQuery e plugin JavaScript  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="promo" class="col-md-12 bg-success text-center">
+            Sconto 10% primo acquisto - Codice: <strong>WEL1</strong>
+            <a href="#" class="btn btn-promo visible-lg-inline-block visible-md-inline-block visible-sm-inline-block"><b>COMPRA ORA!</b></a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row header">
+        <div id="logo" class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-lg-push-1 page">
+            <a href="home.html"><img src="img/logo.png" alt="logo"></a>
+        </div>
+        <div id="head" class="col-xs-12 col-sm-7 col-md-8 col-lg-7 col-lg-push-1">
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="cerca" placeholder="Cerca...">
+                    <a class="input-icon"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                    <button type="submit" class="btn btn-success pull-right input-hidden">Cerca</button>
+                </div>
+            </form>
+
+            <!-- HAMBURGER MENU START -->
+            <a href="#" data-toggle="offcanvas" class="btn-head first small visible-xs-inline-block">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </a>
+            <div class="sidebar-offcanvas visible-xs">
+                <span style="color: white">
+                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </span>
+            </div>
+            <!-- HAMBURGER MENU END -->
+
+            <a href="#" class="btn-head small">
+                <span class="visible-lg-inline-block visible-md-inline-block">Preferiti</span>
+                <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="btn-head small">
+                <span class="visible-lg-inline-block visible-md-inline-block">Carrello</span>
+                <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+            </a>
+            <a href="index.html" class="btn-head small pull-right">
+                <span class="visible-lg-inline-block visible-md-inline-block">Esci</span>
+                <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+            </a>
+            <p class="small pull-right text-right">Accesso come<br><b>Ragione Sociale</b></p>
+        </div>
+    </div>
+</div>
+
+<script> //HAMBURGER MENU SCRIPT
+    $(document).ready(function() {
+        $('[data-toggle=offcanvas]').click(function() {
+            $('.sidebar-offcanvas').toggleClass('active', 1000);
+        });
+        $('.close').click(function() {
+            $('.sidebar-offcanvas').removeClass('active', 1000);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -9,6 +9,9 @@
     margin-top: 3%;
     margin-bottom: 3%;
 }
+#logo.page {
+    padding-right: 6%;
+}
 #logo img{
     width: 100%
 }
@@ -29,15 +32,77 @@
     position: absolute;
     right: 16px;
 }
+.input-hidden {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
 .glyphicon{
     font-size: 20px;
     color: #666;
     -moz-osx-font-smoothing: grayscale;   /* Firefox */
     -webkit-font-smoothing: antialiased; /* WebKit  */
 }
-.small{
-    font-size: 0.85em;
-}
 .payoff{
     margin: 2% 0;
 }
+.header{
+    margin-top: 32px;
+}
+#head{
+    margin-top: 22px;
+}
+#head p {
+    margin-top: -3px;
+    margin-bottom: 0;
+}
+#head form{
+    float: left;
+}
+.btn-head {
+    border: 1px solid #CCC;
+    height: 36px;
+    display: inline-block;
+    margin-left: 16px;
+    padding: 0 10px;
+    line-height: 2.4em;
+    color: #666 !important;
+}
+.btn-head .glyphicon{
+    font-size: 1.2em;
+    margin-left: 2px;
+}
+.first{
+    margin-left: 0!important;
+}
+.btn-head.first {
+    background-color: #666;
+}
+.btn-head.first .glyphicon{
+    color: #FFF !important;
+}
+
+
+/*HAMBURGER MENU STYLE*/
+.sidebar-offcanvas{-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: calc(100% - 20px);
+    background-color: #666;
+    z-index: 51;
+    margin: 0; padding: 0;
+    position: fixed;
+    top:50px;
+    left: -100%;
+}
+.sidebar-offcanvas ul li{margin:0}
+.sidebar-offcanvas ul li a{color:#fff;padding: 15px 20px;margin:0;font-size: 15px;border-bottom: 1px solid #666}
+.sidebar-offcanvas ul li a:hover{background:#000;border:none; border-radius:0}
+.nav{margin-top: 0px;}
+.nav > li > a:hover,
+.nav > li > a:focus{background-color: #666}
+.active {left: 0;}
+/*HAMBURGER MENU STYLE END*/

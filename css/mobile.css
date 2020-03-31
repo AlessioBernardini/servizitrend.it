@@ -8,7 +8,11 @@
         margin-left: 10px;
     }
     #logo.index{
-        width: 320px;
+        width: 320px!important;
+        margin-top: 10%!important;
+        margin-bottom: 10%!important;
+    }
+    #logo.page{
         margin-top: 10%;
         margin-bottom: 10%;
     }
@@ -18,19 +22,62 @@
     .payoff{
         margin: 6% 0;
     }
+    .header, #head{
+        margin-top: 0!important;
+    }
+    #head form{
+        width: 100%;
+        float: none;
+    }
+    #head p {
+        margin-top: -2px;
+        font-size: 1em;
+    }
+    .btn-head{
+        margin-left: 8px !important;
+        padding: 0;
+        width: 36px;
+        text-align: center;
+        line-height: 3em;
+        font-size: 100%;
+    }
+    .btn-head .glyphicon{
+        margin-left: 0;
+    }
+    .first{
+        margin-left: 0!important;
+    }
 }
 
 /* Small devices (smartphone or tablet, 768px and up) */
-@media (min-width: 768px) {
-
+@media (min-width: 768px) and (max-width:  991px) {
+    #head form{
+        width: 120px;
+    }
+    .btn-head{
+        margin-left: 8px !important;
+        padding: 0;
+        width: 36px;
+        text-align: center;
+        line-height: 2.6em;
+    }
 }
 
 /* Medium devices (tablet or laptop, 992px and up) */
 @media (min-width: 992px) {
-
+    #head form{
+        width: 150px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1600px) {
+    #head form{
+        width: 45%;
+    }
 }
