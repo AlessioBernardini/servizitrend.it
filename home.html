@@ -54,9 +54,55 @@
                 <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
             </a>
             <div class="sidebar-offcanvas visible-xs">
-                <span style="color: white">
-                    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </span>
+                <span class="glyphicon glyphicon-remove close" aria-hidden="true"></span>
+                <ul class="nav">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="#">Chi Siamo</a></li>
+            <!-- SOTTOMENU A TRE LIVELLI START -->
+                    <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <a id="headingOne" class="submenu" role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Prodotti <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                            <div id="collapseOne" class="panel-collapse collapse level-1" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <a id="headingTwo" class="submenu" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">STAMPA SU CARTA <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                            <div id="collapseTwo" class="panel-collapse collapse level-2" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <li role="presentation"><a href="#">Carta Bianca</a></li>
+                                                    <li role="presentation"><a href="#">Carta Blue Back</a></li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a id="headingThree" class="submenu" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">STAMPA SU MATERIALI ECO (PP, PET) <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                            <div id="collapseThree" class="panel-collapse collapse level-2" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <li role="presentation"><a href="#">Film Backlite</a></li>
+                                                    <li role="presentation"><a href="#">Film Stoplight</a></li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default">
+                                            <a id="headingFour" class="submenu" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">STAMPA SU TELI BANNER <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                                            <div id="collapseFour" class="panel-collapse collapse level-2" role="tabpanel" aria-labelledby="headingFour">
+                                                <div class="panel-body">
+                                                    <li role="presentation"><a href="#">Telo Banner Ecologico</a></li>
+                                                    <li role="presentation"><a href="#">Telo Banner in PVC</a></li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <!-- MENU A TRE LIVELLI END -->
+                    <li role="presentation"><a href="#">Newsletter</a></li>
+                    <li role="presentation"><a href="#">Contatti</a></li>
+                    <li role="presentation"><a href="#">Sito istituzionale</a></li>
+                </ul>
+                <a class="btn btn-danger text-center" href="#" role="button"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Promozioni e Offerte</a>
             </div>
             <!-- HAMBURGER MENU END -->
 
@@ -75,15 +121,60 @@
             <p class="small pull-right text-right">Accesso come<br><b>Ragione Sociale</b></p>
         </div>
     </div>
+
+    <div class="row menu visible-sm visible-md visible-lg">
+        <nav class="nav navbar-nav col-xs-12 col-lg-10 col-lg-push-1">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chi Siamo</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prodotti <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="disabled">STAMPA SU CARTA</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Carta Bianca</a></li>
+                    <li><a href="#">Carta Blue Back</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a class="disabled">STAMPA SU MATERIALI ECO (PP,PET)</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Film Backlite</a></li>
+                    <li><a href="#">Film Stoplight</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a class="disabled">STAMPA SU TELI BANNER</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Telo Banner Ecologico</a></li>
+                    <li><a href="#">Telo Banner in PVC</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contatti</a></li>
+            <li><a href="#">Sito istituzionale</a></li>
+            <a class="pull-right promo" href="#"><span class="glyphicon glyphicon-gift" aria-hidden="true"></span> Promo<span class="visible-md-inline visible-lg-inline">zioni</span> e Offerte</a>
+        </nav>
+    </div>
+
 </div>
 
-<script> //HAMBURGER MENU SCRIPT
+
+
+
+<script>
+    //HAMBURGER MENU SCRIPT
     $(document).ready(function() {
         $('[data-toggle=offcanvas]').click(function() {
             $('.sidebar-offcanvas').toggleClass('active', 1000);
         });
         $('.close').click(function() {
             $('.sidebar-offcanvas').removeClass('active', 1000);
+        });
+        $('.submenu').on('click',function(){
+            if($(this).children("span").hasClass('glyphicon-menu-up')) {
+                $(this).children("span").removeClass('glyphicon-menu-up');
+                $(this).children("span").addClass('glyphicon-menu-down');
+            }
+            else {
+                $(this).children("span").removeClass('glyphicon-menu-down');
+                $(this).children("span").addClass('glyphicon-menu-up');
+            }
         });
     });
 </script>

@@ -47,7 +47,7 @@
 .payoff{
     margin: 2% 0;
 }
-.header{
+.header, .menu{
     margin-top: 32px;
 }
 #head{
@@ -97,12 +97,99 @@
     position: fixed;
     top:50px;
     left: -100%;
+    padding: 10px;
+    padding-left: 20px;
 }
-.sidebar-offcanvas ul li{margin:0}
-.sidebar-offcanvas ul li a{color:#fff;padding: 15px 20px;margin:0;font-size: 15px;border-bottom: 1px solid #666}
-.sidebar-offcanvas ul li a:hover{background:#000;border:none; border-radius:0}
-.nav{margin-top: 0px;}
-.nav > li > a:hover,
-.nav > li > a:focus{background-color: #666}
-.active {left: 0;}
+.active {
+    left: 0;
+}
+.nav{
+    margin: 0;
+    padding: 0;
+}
+.sidebar-offcanvas ul li{
+    margin: 0;
+    list-style-type: none;
+}
+.sidebar-offcanvas a{
+    color: #ccc!important;
+    font-size: 16px;
+    line-height: 40px;
+}
+.sidebar-offcanvas .active a{
+    color: #fff!important;
+    font-weight: 600;
+}
+#collapseOne a {
+    font-size: 15px;
+    line-height: 38px;
+}
+.panel .level-1 a{
+    padding-left: 10px;
+}
+.panel .level-2 a{
+    padding-left: 20px;
+}
+.panel a span{
+    color: #ccc;
+    font-size: 87%;
+}
+.panel .active a span{
+    color: #fff;
+}
+.sidebar-offcanvas .btn-danger {
+    height: 40px;
+    line-height: 42px;
+    display: block;
+    width: calc(100% + 30px);
+    margin-left: -20px;
+    margin-bottom: -10px;
+    margin-top: 40px;
+    font-weight: 700;
+    color: #FFF!important;
+}
+.sidebar-offcanvas .btn-danger .glyphicon {
+    color: #FFF;
+}
 /*HAMBURGER MENU STYLE END*/
+
+.menu .nav {
+    padding: 0 8px;
+}
+.menu li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 16px;
+}
+.menu li a{
+    color: #666!important;
+}
+.menu .active a{
+    color: #000!important;
+    font-weight: 600;
+}
+.menu .promo {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -5px;
+}
+.menu .promo .glyphicon {
+    color: #ED1B24;
+}
+.menu .dropdown .glyphicon {
+    font-size: 87%;
+}
+.menu .dropdown li {
+    display: block;
+    margin-left: 0;
+}
+.menu .dropdown li a {
+    font-size: 14px;
+    line-height: 23px;
+}
+.menu .dropdown .disabled {
+    color: #000!important;
+}
+.menu .dropdown .disabled:hover {
+    background: none;
+}

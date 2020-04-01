@@ -2712,9 +2712,8 @@ tbody.collapse.in {
   background-clip: padding-box;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -2722,17 +2721,17 @@ tbody.collapse.in {
 }
 .dropdown-menu .divider {
   height: 1px;
-  margin: 10px 0;
+  margin: 5px 0;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #CCC;
 }
 .dropdown-menu > li > a {
   display: block;
-  padding: 3px 20px;
+  padding: 3px 10px;
   clear: both;
   font-weight: 400;
-  line-height: 1.42857143;
-  color: #666666;
+  line-height: 24px;
+  color: #666;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
@@ -3075,21 +3074,12 @@ tbody.collapse.in {
 }
 .close {
   float: right;
-  font-size: 24px;
-  font-weight: bold;
   line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  filter: alpha(opacity=20);
-  opacity: 0.2;
+  color: #FFF!important;
 }
 .close:hover,
 .close:focus {
-  color: #000000;
-  text-decoration: none;
   cursor: pointer;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
 }
 button.close {
   padding: 0;
