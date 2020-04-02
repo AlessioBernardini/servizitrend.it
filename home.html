@@ -158,15 +158,23 @@
 
 
 <script>
-    //HAMBURGER MENU SCRIPT
-    $(document).ready(function() {
-        $('[data-toggle=offcanvas]').click(function() {
+    $(document).ready(function() { //mostro e nascondo hamburger menu
+        $('[data-toggle=offcanvas]').click(function(e) {
             $('.sidebar-offcanvas').toggleClass('active', 1000);
+            e.stopPropagation();
         });
-        $('.close').click(function() {
+        $('.close').click(function() { //chiudo menu se clicco "chiudi"
             $('.sidebar-offcanvas').removeClass('active', 1000);
         });
-        $('.submenu').on('click',function(){
+
+        $(document).click(function(e) { //chiudo menu se clicco fuori (in qualsiasi punto tranne il menu o il sottomenu)
+            if($(e.target).hasClass("sidebar-offcanvas") || $(e.target).hasClass("submenu")){
+                return;
+            }
+            $('.sidebar-offcanvas').removeClass('active', 1000);
+        });
+
+        $('.submenu').on('click',function(){ //cambio la freccia del sottomenu (aperto/chiuso))
             if($(this).children("span").hasClass('glyphicon-menu-up')) {
                 $(this).children("span").removeClass('glyphicon-menu-up');
                 $(this).children("span").addClass('glyphicon-menu-down');
@@ -176,6 +184,7 @@
                 $(this).children("span").addClass('glyphicon-menu-up');
             }
         });
+
     });
 </script>
 
