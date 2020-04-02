@@ -3,18 +3,26 @@
     body {
         font-size: 13px;
     }
+    h5{
+        font-size: 14px;
+    }
     .container .col-xs-12 {
         width: calc(100% - 20px);
         margin-left: 10px;
+        padding: 0;
     }
     #logo.index{
         width: 320px!important;
         margin-top: 10%!important;
         margin-bottom: 10%!important;
     }
+    #logo img{
+        margin-left: -5px;
+    }
     #logo.page{
         margin-top: 10%;
         margin-bottom: 10%;
+        margin-left: calc(6% - 1px);
     }
     #login{
         padding: 20px;
@@ -47,6 +55,9 @@
     .first{
         margin-left: 0!important;
     }
+    .carousel-control .glyphicon {
+        top: calc(100% - 40px);
+    }
 }
 
 /* Small devices (smartphone or tablet, 768px and up) */
@@ -68,12 +79,18 @@
         font-size: 16px;
         margin-top: -2px;
     }
+    .sidebar .carousel-caption .text {
+        width: 100%;
+    }
 }
 
 /* Medium devices (tablet or laptop, 992px and up) */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #head form{
         width: 150px;
+    }
+    .sidebar .carousel-caption .text {
+        width: 100%;
     }
 }
 

@@ -37,10 +37,10 @@
 
 <div class="container">
     <div class="row header">
-        <div id="logo" class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-lg-push-1 page">
+        <div id="logo" class="col-xs-12 col-sm-5 col-md-4 col-lg-3 col-lg-offset-1 page">
             <a href="home.html"><img src="img/logo.png" alt="logo"></a>
         </div>
-        <div id="head" class="col-xs-12 col-sm-7 col-md-8 col-lg-7 col-lg-push-1">
+        <div id="head" class="col-xs-12 col-sm-7 col-md-8 col-lg-7">
             <form>
                 <div class="form-group">
                     <input type="text" class="form-control" id="cerca" placeholder="Cerca...">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-            <!-- MENU A TRE LIVELLI END -->
+            <!-- SOTTOMENU A TRE LIVELLI END -->
                     <li role="presentation"><a href="#">Newsletter</a></li>
                     <li role="presentation"><a href="#">Contatti</a></li>
                     <li role="presentation"><a href="#">Sito istituzionale</a></li>
@@ -123,8 +123,8 @@
     </div>
 
     <div class="row menu visible-sm visible-md visible-lg">
-        <nav class="nav navbar-nav col-xs-12 col-lg-10 col-lg-push-1">
-            <li class="active"><a href="#">Home</a></li>
+        <nav class="nav navbar-nav col-xs-12 col-lg-10 col-lg-offset-1">
+            <li class="first active"><a href="#">Home</a></li>
             <li><a href="#">Chi Siamo</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prodotti <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
@@ -152,6 +152,86 @@
         </nav>
     </div>
 
+    <div class="row content">
+
+        <div id="carousel-slideshow" class="carousel slide col-lg-7 col-lg-offset-1 col-lg-push-3" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <!-- Slides -->
+                <div class="item active">
+                    <a href="#" class="visible-sm visible-md visible-lg"><img src="img/slide.jpg" alt="slide"></a>
+                    <a href="#" class="visible-xs"><img src="img/slide-xs.jpg" alt="slide-mobile"></a>
+                    <div class="carousel-caption">Stampiamo solo con tecnologia <b>100% Green!</b> Base acqua oppure UV-Led</div>
+                </div>
+                <div class="item">
+                    <a href="#" class="visible-sm visible-md visible-lg"><img src="img/slide.jpg" alt="slide"></a>
+                    <a href="#" class="visible-xs"><img src="img/slide-xs.jpg" alt="slide-mobile"></a>
+                    <div class="carousel-caption">Stampiamo solo con tecnologia <b>100% Green!</b> Base acqua oppure UV-Led</div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-slideshow" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-slideshow" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="space visible-md visible-sm"></div>
+
+        <div class="sidebar col-lg-3 col-lg-pull-7 col-md-4 col-sm-5 col-xs-12">
+            <ul class="menu visible-lg visible-md visible-sm">
+                <li class="disabled"><a>STAMPA SU CARTA</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Carta Bianca</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Carta Blue Back</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a>STAMPA SU MATERIALI ECO (PP,PET)</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Film Backlite</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Film Stoplight <span class="btn-danger pull-right small visible-md visible-lg">Roll-Up inclusi!</span></a></li>
+                <li role="separator" class="divider"></li>
+                <li class="disabled"><a>STAMPA SU TELI BANNER</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Telo Banner Ecologico <span class="btn-danger pull-right small visible-md visible-lg">NEW!</span></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Telo Banner in PVC</a></li>
+            </ul>
+            <div id="carousel-promo" class="carousel slide" data-ride="carousel" data-interval="false">
+                <h5>PRODOTTI IN OFFERTA <a href="#">Vedi tutti</a></h5>
+                <div class="carousel-inner" role="listbox">
+                    <!-- Slides -->
+                    <div class="item active">
+                        <a href="#"><img src="img/promo.jpg" alt="slide"></a>
+                        <div class="carousel-caption">
+                            <span class="text">Telo Banner Ecologico</span><span class="price"><small class="barrato">3,50</small><span class="scontato">2,10</span><small class="um">€/mq</small></span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="img/promo.jpg" alt="slide"></a>
+                        <div class="carousel-caption">
+                            <span class="text">Telo Banner Ecologico</span><span class="price"><small class="barrato">3,50</small><span class="scontato">2,10</span><small class="um">€/mq</small></span>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-promo" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-promo" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </div>
 
 
@@ -168,7 +248,7 @@
         });
 
         $(document).click(function(e) { //chiudo menu se clicco fuori (in qualsiasi punto tranne il menu o il sottomenu)
-            if($(e.target).hasClass("sidebar-offcanvas") || $(e.target).hasClass("submenu")){
+            if($(e.target).hasClass("sidebar-offcanvas") || $(e.target).hasClass("submenu") ||  $(e.target).hasClass("panel") ||  $(e.target).attr("role")){
                 return;
             }
             $('.sidebar-offcanvas').removeClass('active', 1000);
@@ -184,6 +264,8 @@
                 $(this).children("span").addClass('glyphicon-menu-up');
             }
         });
+
+        $('.carousel').pause('hover'); //pausa autopay del carosello se ci sono sopra
 
     });
 </script>

@@ -3545,12 +3545,14 @@ button.close {
   width: 15%;
   font-size: 20px;
   color: #ffffff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0);
-  filter: alpha(opacity=50);
-  opacity: 0.5;
+  text-align: left;
 }
+.carousel-control.right {
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+/*
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -3569,6 +3571,7 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
 }
+ */
 .carousel-control:hover,
 .carousel-control:focus {
   color: #ffffff;
@@ -3641,15 +3644,13 @@ button.close {
 }
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
+  bottom: 0;
   z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
   color: #ffffff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  padding: 10px 40px;
 }
 .carousel-caption .btn {
   text-shadow: none;
@@ -3671,11 +3672,6 @@ button.close {
   .carousel-control .glyphicon-chevron-right,
   .carousel-control .icon-next {
     margin-right: -10px;
-  }
-  .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px;
   }
   .carousel-indicators {
     bottom: 20px;

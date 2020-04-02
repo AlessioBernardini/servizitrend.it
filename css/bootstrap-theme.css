@@ -338,6 +338,8 @@ fieldset[disabled] .btn-warning.active {
 }
 .btn-danger {
   background-color: #ED1B24;
+  color: #FFF;
+  padding: 2px 5px;
 }
 /*
 .btn-danger:hover,
