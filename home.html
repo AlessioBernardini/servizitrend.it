@@ -154,7 +154,7 @@
 
     <div class="row content">
 
-        <div id="carousel-slideshow" class="carousel slide col-lg-7 col-lg-offset-1 col-lg-push-3" data-ride="carousel">
+        <div id="carousel-slideshow" class="carousel slide col-lg-7 col-lg-offset-1 col-lg-push-3 col-md-12 col-sm-12 col-xs-12" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
                 <!-- Slides -->
                 <div class="item active">
@@ -179,9 +179,8 @@
             </div>
         </div>
 
-        <div class="space visible-md visible-sm"></div>
-
         <div class="sidebar col-lg-3 col-lg-pull-7 col-md-4 col-sm-5 col-xs-12">
+            <div class="space visible-md visible-sm"></div>
             <ul class="menu visible-lg visible-md visible-sm">
                 <li class="disabled"><a>STAMPA SU CARTA</a></li>
                 <li role="separator" class="divider"></li>
@@ -228,6 +227,64 @@
                     </a>
                 </div>
             </div>
+            <div class="who visible-lg visible-md visible-sm">
+                <h4>Chi Siamo</h4>
+                <p>Testo che serve per il seo in cui inseriremo tutte le parole chiave necessarie all'indicizzazione. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <a href="#">Leggi tutto...</a>
+            </div>
+        </div>
+
+        <div class="featured col-lg-7 col-lg-offset-1 col-lg-push-3 col-md-8 col-sm-7 col-xs-12">
+            <div class="space visible-md visible-sm visible-xs"></div>
+            <div class="row">
+                <div class="top-sellers col-lg-7">
+                    <h5>I NOSTRI TOP-SELLERS</h5>
+                    <div class="row">
+                        <div class="top col-sm-6">
+                            <a href="#">
+                                <div class="wrapper"><img src="img/top.jpg" alt="Nome Prodotto"></div>
+                                <div class="text"><h3>Telo Banner Ecologico</h3><p>Banner Eco completamente smaltibile nell'umido</p></div>
+                            </a>
+                        </div>
+                        <div class="top col-sm-6">
+                            <a href="#">
+                                <div class="wrapper"><img src="img/top.jpg" alt="Nome Prodotto"></div>
+                                <div class="text"><h3>Telo Banner Ecologico</h3><p>Banner Eco completamente smaltibile nell'umido</p></div>
+                            </a>
+                        </div>
+                        <div class="top col-sm-6">
+                            <a href="#">
+                                <div class="wrapper"><img src="img/top.jpg" alt="Nome Prodotto"></div>
+                                <div class="text"><h3>Telo Banner Ecologico</h3><p>Banner Eco completamente smaltibile nell'umido</p></div>
+                            </a>
+                        </div>
+                        <div class="top col-sm-6">
+                            <a href="#">
+                                <div class="wrapper"><img src="img/top.jpg" alt="Nome Prodotto"></div>
+                                <div class="text"><h3>Telo Banner Ecologico</h3><p>Banner Eco completamente smaltibile nell'umido</p></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="space visible-md visible-sm visible-xs"></div>
+                <div class="consigliati col-lg-5">
+                    <h5>PRODOTTI CONSIGLIATI PER TE</h5>
+                    <div class="row">
+                        <div class="consigliato col-lg-12 col-sm-6">
+                            <a href="#">
+                                <div class="wrapper"><img src="img/consigliato.jpg" alt="Nome Prodotto"></div>
+                                <div class="text"><h3>Film Backlite</h3><p>Supporto Eco in polipropilene (PP) ideale per retroilluminati e cassonetti luminosi</p></div>
+                            </a>
+                        </div>
+                        <div class="consigliato col-lg-12 col-sm-6">
+                            <a href="#">
+                                <div class="wrapper"><img src="img/consigliato.jpg" alt="Nome Prodotto"></div>
+                                <div class="text"><h3>Film Backlite</h3><p>Supporto Eco in polipropilene (PP) ideale per retroilluminati e cassonetti luminosi</p></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -264,9 +321,19 @@
                 $(this).children("span").addClass('glyphicon-menu-up');
             }
         });
-
-        $('.carousel').pause('hover'); //pausa autopay del carosello se ci sono sopra
-
+        //Solo in versione desktop sposto il div "featured" in base all'altezza della slideshow
+        if ($(window).width() >= 1200) {
+            var SlideHeight = $('#carousel-slideshow').height();
+            $('.content .featured').css('position', 'absolute');
+            $('.content .featured').css('top', SlideHeight+35);
+        }
+        $(window).resize(function(){
+            if ($(window).width() >= 1200) {
+                var SlideHeight = $('#carousel-slideshow').height();
+                $('.content .featured').css('position', 'absolute');
+                $('.content .featured').css('top', SlideHeight+35);
+            }
+        });
     });
 </script>
 

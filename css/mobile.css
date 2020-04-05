@@ -6,6 +6,9 @@
     h5{
         font-size: 14px;
     }
+    h3{
+        font-size: 16px;
+    }
     .container .col-xs-12 {
         width: calc(100% - 20px);
         margin-left: 10px;
@@ -57,6 +60,18 @@
     }
     .carousel-control .glyphicon {
         top: calc(100% - 40px);
+    }
+    .top-sellers .top img, .consigliati .consigliato img{
+        max-height: none;
+        max-width: 100%;
+        height: auto;
+        margin-top: -10%;
+    }
+    .top-sellers .top .wrapper, .consigliati .consigliato .wrapper{
+        max-height: 150px;
+    }
+    .top-sellers .top .text, .consigliati .consigliato .text{
+        padding: 10px;
     }
 }
 

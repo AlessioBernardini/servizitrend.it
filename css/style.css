@@ -1,8 +1,21 @@
 h5{
     color: #000;
+    margin-top: 0;
 }
 h5 a{
     margin-left: 8px;
+}
+h4{
+    color: #000;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #000;
+}
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
 }
 #promo{
     color: #FFFFFF;
@@ -56,6 +69,7 @@ h5 a{
 }
 .header, .menu, .content{
     margin-top: 32px;
+    position: relative;
 }
 #head{
     margin-top: 22px;
@@ -231,9 +245,8 @@ h5 a{
 .sidebar .menu .disabled a{
     color: #000!important;
 }
-.sidebar .carousel{
+.sidebar .carousel, .sidebar .who{
     margin-top: 32px;
-    margin-bottom: 64px;
 }
 .sidebar .carousel-control .glyphicon {
     top: calc(50% - 20px);
@@ -270,4 +283,27 @@ h5 a{
     line-height: 1em;
     font-weight: 700;
     margin: 0 3px 0 10px;
+}
+.top-sellers .top, .consigliati .consigliato {
+    margin-bottom: 16px;
+}
+.top-sellers .top img, .consigliati .consigliato img{
+     max-height: 200px;
+     width: auto;
+ }
+.top-sellers .top .wrapper, .consigliati .consigliato .wrapper{
+    overflow: hidden;
+}
+.top-sellers .top .text{
+    background-color: #f1f1f1;
+    padding: 16px;
+}
+.consigliati .consigliato .text{
+    background-color: #deeed3;
+    padding: 16px;
+}
+.top-sellers .top .text p, .consigliati .consigliato .text p{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #000;
 }
