@@ -269,6 +269,11 @@ fieldset[disabled] .btn-info.active {
   background-color: #3e791c;
   color: #FFF;
 }
+.bg-danger .btn-promo:hover,
+.bg-danger .btn-promo:focus {
+  background-color: #B52026;
+  color: #FFF;
+}
 .btn-promo:active,
 .btn-promo.active {
   background-color: #3e791c;

@@ -307,3 +307,64 @@ h3{
     margin-bottom: 0;
     color: #000;
 }
+
+#footer{
+    margin-top: 48px;
+    background-color: #f1f1f1;
+}
+#footer .bg-danger{
+    color: #FFF;
+    padding: 12px 0 15px 0;
+    font-size: 20px;
+}
+#footer .bg-danger .glyphicon{
+    color: #FFF;
+    font-size: 1.25em;
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+#footer .second .col-lg-3, #footer .second .col-lg-1{
+    border-left: 1px solid #CCC;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    min-height: 330px;
+}
+#footer .second .col-lg-3.primo{
+    border: none;
+    padding-left: 8px;
+    padding-right: 24px;
+}
+#footer h4{
+    color: #666;
+    border: none;
+    padding: 0;
+}
+#footer h4 .glyphicon{
+    margin-right: 8px;
+}
+#footer .primo h4 .glyphicon{
+    margin-left: -4px;
+}
+#footer .second img{
+    margin-top: 16px;
+    max-width: 90%;
+}
+#footer .second a{
+    color: #666!important;
+}
+#footer .second a:hover, #footer .second a:active{
+    text-decoration: underline;
+}
+#footer .second p.small{
+    margin-top: 8px;
+}
+#footer .third{
+    background-color: #CCC;
+}
+#footer .info{
+    padding: 16px 0;
+}
+#footer .info p{
+    margin-bottom: 0;
+}
