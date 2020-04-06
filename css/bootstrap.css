@@ -1315,11 +1315,11 @@ a.bg-success:focus {
   background-color: #57AB27;
 }
 .bg-info {
-  background-color: #CCC;
+  background-color: #f1f1f1;
 }
 a.bg-info:hover,
 a.bg-info:focus {
-  background-color: #f1f1f1;
+  background-color: #CCCCCC;
 }
 .bg-warning {
   background-color: #666666;

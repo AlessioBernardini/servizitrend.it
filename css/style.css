@@ -359,7 +359,7 @@ h3{
 #footer .second p.small{
     margin-top: 8px;
 }
-#footer .third{
+#footer .third, #footer .bg-info{
     background-color: #CCC;
 }
 #footer .info{
