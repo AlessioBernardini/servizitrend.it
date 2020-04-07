@@ -343,6 +343,9 @@
     </div>
 </div>
 
+<!-- PULSANTE SCROLL TOP, VA AGGIUNTO A TUTTE LE PAGINE INSIEME AL SUO SCRIPT (VEDI RIGA 389) -->
+<a href="#" id="scrolltop" aria-hidden="true" data-attribute="back-to-top"><span class="glyphicon glyphicon-circle-arrow-up" aria-hidden="true"></span></a>
+
 <script>
     $(document).ready(function() { //mostro e nascondo hamburger menu
         $('[data-toggle=offcanvas]').click(function(e) {
@@ -382,6 +385,19 @@
                 $('.content .featured').css('position', 'absolute');
                 $('.content .featured').css('top', SlideHeight+35);
             }
+        });
+        //pulsante scroll top, deve essere presente in tutte le pagine
+        var btn = $('#scrolltop');
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
         });
     });
 </script>
